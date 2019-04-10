@@ -1,3 +1,3 @@
 # project-lvl1-s478
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/08ba8a562b8cfdf377b8/test_coverage)](https://codeclimate.com/github/KLN1987/project-lvl1-s478/test_coverage)
