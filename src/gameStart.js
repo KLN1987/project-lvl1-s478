@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 
 import randomNumber from './even';
 
-import {getName} from './index';
+import { getName } from './index';
 
 export const getEven = number => number % 2 === 0;
 
