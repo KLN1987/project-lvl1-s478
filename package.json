@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "console game",
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-event": "dist/bin/brain-event.js"
   },
   "files": [
     "dist"
