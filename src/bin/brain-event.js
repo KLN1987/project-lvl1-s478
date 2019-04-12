@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import brainEven from '../gameStart';
+import brainEvent from '../games/brain-event';
 
-brainEven();
+brainEvent();

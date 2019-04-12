@@ -1,17 +1,23 @@
 import readlineSync from 'readline-sync';
+import { car, cdr } from 'hexlet-pairs';
 
-import randomNumber from './even';
+export const getName = () => {
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('What is your name?');
+  console.log(`Hi,${userName} !`);
+  return userName;
+};
 
-import { getName } from './index';
+const numberOfTrueAnswer = 3;
 
-export const getEven = number => number % 2 === 0;
-
-export const BrGame = () => {
+const BrGame = (discription, taskGame) => {
   const userName = getName();
-  for (let i = 0; i < 3; i += 1) {
-    const taskGame = randomNumber();
-    const correctAnswer = getEven(taskGame) ? 'yes' : 'no';
-    console.log(`Question: ${taskGame}`);
+  console.log(discription);
+  for (let i = 0; i < numberOfTrueAnswer; i += 1) {
+    const task = taskGame();
+    const taskQuestion = car(task);
+    const correctAnswer = cdr(task);
+    console.log(`Question: ${taskQuestion}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer !== correctAnswer) {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
@@ -22,5 +28,4 @@ export const BrGame = () => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
-
-export default user => BrGame(user);
+export default BrGame;
