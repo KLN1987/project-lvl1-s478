@@ -1,9 +1,10 @@
 import readlineSync from 'readline-sync';
 import { car, cdr } from 'hexlet-pairs';
 
+console.log('Welcome to the Brain Games!');
+const userName = readlineSync.question('What is your name?');
+
 export const getName = () => {
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('What is your name?');
   console.log(`Hi,${userName} !`);
   return userName;
 };
