@@ -1,4 +1,6 @@
 node_modules
 .DS_Store
 .vs./vscode
+dist.vs/.vscode
 dist
+dist/bin/brain-calc.js dist/bin/brain-event.js dist/bin/brain-games.js dist/gameStart.js dist/games/brain-calc.js dist/games/brain-calc.js dist/games/brain-event.js dist/games/brain-event.js dist/index.js

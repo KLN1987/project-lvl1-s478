@@ -10,7 +10,7 @@ export const getName = () => {
 
 const numberOfTrueAnswer = 3;
 
-const BrGame = (discription, taskGame) => {
+const BrainGame = (discription, taskGame) => {
   const userName = getName();
   console.log(discription);
   for (let i = 0; i < numberOfTrueAnswer; i += 1) {
@@ -28,4 +28,4 @@ const BrGame = (discription, taskGame) => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
-export default BrGame;
+export default BrainGame;
