@@ -1,10 +1,10 @@
 import { cons } from 'hexlet-pairs';
-import BrGame from '../gameStart';
+import BrainGame from '../gameStart';
 import randomNumber from '../even';
 
 const description = 'What is the result of the expression?';
 
-const taskGame = () => {
+const conductGame = () => {
   const firstNumber = randomNumber();
   const secondNumber = randomNumber();
   const numberOfRandom = randomNumber(1, 3);
@@ -24,7 +24,8 @@ const taskGame = () => {
       question = `${firstNumber} * ${secondNumber}`;
       answer = firstNumber * secondNumber;
   }
-  return cons(question, String(answer));
+  const executionGame = cons(question, String(answer));
+  return executionGame;
 };
 
-export default user => BrGame(description, taskGame, user);
+export default user => BrainGame(description, conductGame, user);

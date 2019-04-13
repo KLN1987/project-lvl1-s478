@@ -1,14 +1,14 @@
 import { cons } from 'hexlet-pairs';
-import BrGame from '../gameStart';
+import BrainGame from '../gameStart';
 import randomNumber from '../even';
 
 const description = 'Answer "yes" if number even otherwise answer "no".';
 const isEven = number => number % 2 === 0;
 
-const taskGame = () => {
+const conductGame = () => {
   const question = randomNumber();
   const correctAnswer = isEven(question) ? 'yes' : 'no';
   return cons(question, correctAnswer);
 };
 
-export default user => BrGame(description, taskGame, user);
+export default user => BrainGame(description, conductGame, user);
