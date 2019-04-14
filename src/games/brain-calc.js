@@ -3,15 +3,16 @@ import playGame from '../index';
 import randomNumber from '../randomNumber';
 
 const description = 'What is the result of the expression?';
-const numberOfOperation = randomNumber(1, 3);
+const numberOfOperation = randomNumber(0, 2);
 
 const conductGame = () => {
   const firstNumber = randomNumber();
   const secondNumber = randomNumber();
+  const numberOfRandomOperation = numberOfOperation;
 
   let question;
   let answer;
-  switch (numberOfOperation) {
+  switch (numberOfRandomOperation) {
     case 1:
       question = `${firstNumber} + ${secondNumber}`;
       answer = firstNumber + secondNumber;
