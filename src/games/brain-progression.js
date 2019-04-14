@@ -5,9 +5,9 @@ import randomNumber from '../randomNumber';
 const description = 'What number is missing in the progression?';
 const progresLength = 10;
 
-const getProgression = (stepGame, firstElement, length) => {
+const getProgression = (stepGame, firstElement) => {
   const progression = [];
-  for (let i = 0; i < length; i += 1) {
+  for (let i = 0; i < progresLength; i += 1) {
     const item = firstElement + stepGame * i;
     progression.push(item);
   }
