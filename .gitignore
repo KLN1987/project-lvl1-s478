@@ -1,5 +1,5 @@
 node_modules
-src/.DS_Store
+.DS_Store
 .vs./vscode
 dist/
 .vs/.vscode

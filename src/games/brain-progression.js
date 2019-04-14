@@ -1,6 +1,6 @@
 import { cons } from 'hexlet-pairs';
-import BrainGame from '../gameStart';
-import randomNumber from '../even';
+import BrainGame from '../index';
+import randomNumber from '../randomNumber';
 
 const description = 'What number is missing in the progression?';
 const progresLength = 10;
@@ -29,5 +29,4 @@ const conductGame = () => {
 
   return cons(question, answer);
 };
-
 export default username => BrainGame(description, conductGame, username);

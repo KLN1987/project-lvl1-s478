@@ -1,6 +1,6 @@
 import { cons } from 'hexlet-pairs';
 import BrainGame from '../gameStart';
-import randomNumber from '../even';
+import randomNumber from '../randomNumber';
 
 const description = 'What is the result of the expression?';
 
