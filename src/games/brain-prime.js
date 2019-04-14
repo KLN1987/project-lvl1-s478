@@ -1,5 +1,5 @@
 import { cons } from 'hexlet-pairs';
-import BrainGame from '../index';
+import playGame from '../index';
 import randomNumber from '../randomNumber';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -17,10 +17,10 @@ const primeGame = (number) => {
 };
 
 const conductGame = () => {
-  const taskNumber = randomNumber();
-  const correctAnswer = primeGame(taskNumber) ? 'yes' : 'no';
-  const coursOfGame = cons(taskNumber, correctAnswer);
+  const question = randomNumber();
+  const correctAnswer = primeGame(question) ? 'yes' : 'no';
+  const coursOfGame = cons(question, correctAnswer);
   return coursOfGame;
 };
 
-export default username => BrainGame(description, conductGame, username);
+export default user => playGame(description, conductGame, user);

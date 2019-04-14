@@ -1,17 +1,17 @@
 import { cons } from 'hexlet-pairs';
-import BrainGame from '../index';
+import playGame from '../index';
 import randomNumber from '../randomNumber';
 
 const description = 'What is the result of the expression?';
+const numberOfTrueAnswer = 3;
 
 const conductGame = () => {
   const firstNumber = randomNumber();
   const secondNumber = randomNumber();
-  const numberOfRandom = randomNumber(1, 3);
 
   let question;
   let answer;
-  switch (numberOfRandom) {
+  switch (numberOfTrueAnswer) {
     case 1:
       question = `${firstNumber} + ${secondNumber}`;
       answer = firstNumber + secondNumber;
@@ -24,8 +24,7 @@ const conductGame = () => {
       question = `${firstNumber} * ${secondNumber}`;
       answer = firstNumber * secondNumber;
   }
-  const executionGame = cons(question, String(answer));
-  return executionGame;
+  return cons(question, String(answer));
 };
 
-export default user => BrainGame(description, conductGame, user);
+export default user => playGame(description, conductGame, user);

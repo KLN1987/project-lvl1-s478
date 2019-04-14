@@ -7,10 +7,10 @@ console.log(`Hi,${userName} !`);
 
 const numberOfTrueAnswer = 3;
 
-const BrainGame = (discription, taskGame) => {
+const playGame = (discription, askGame) => {
   console.log(discription);
   for (let i = 0; i < numberOfTrueAnswer; i += 1) {
-    const task = taskGame();
+    const task = askGame();
     const taskQuestion = car(task);
     const correctAnswer = cdr(task);
     console.log(`Question: ${taskQuestion}`);
@@ -24,4 +24,4 @@ const BrainGame = (discription, taskGame) => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
-export default BrainGame;
+export default playGame;

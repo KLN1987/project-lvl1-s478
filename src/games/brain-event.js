@@ -1,5 +1,5 @@
 import { cons } from 'hexlet-pairs';
-import BrainGame from '../index';
+import playGame from '../index';
 import randomNumber from '../randomNumber';
 
 const description = 'Answer "yes" if number even otherwise answer "no".';
@@ -11,4 +11,4 @@ const conductGame = () => {
   return cons(question, correctAnswer);
 };
 
-export default user => BrainGame(description, conductGame, user);
+export default user => playGame(description, conductGame, user);

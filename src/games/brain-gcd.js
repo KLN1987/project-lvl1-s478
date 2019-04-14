@@ -1,14 +1,14 @@
 import { cons } from 'hexlet-pairs';
-import BrainGame from '../index';
+import playGame from '../index';
 import randomNumber from '../randomNumber';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
-const gcdGame = (firstOperand, secondOperand) => {
-  const iter = Math.min(firstOperand, secondOperand);
+const playGCD = (firstNumber, secondNumber) => {
+  const iter = Math.min(firstNumber, secondNumber);
   let result = 1;
   for (let i = 2; i <= iter; i += 1) {
-    if (firstOperand % i === 0 && secondOperand % i === 0) {
+    if (firstNumber % i === 0 && secondNumber % i === 0) {
       result = i;
     }
   }
@@ -16,12 +16,12 @@ const gcdGame = (firstOperand, secondOperand) => {
 };
 
 const conductGame = () => {
-  const firstOperand = randomNumber();
-  const secondOperand = randomNumber();
-  const question = `${firstOperand} ${secondOperand}`;
-  const answer = String(gcdGame(firstOperand, secondOperand));
+  const firstNumber = randomNumber();
+  const secondNumber = randomNumber();
+  const question = `${firstNumber} ${secondNumber}`;
+  const answer = String(playGCD(firstNumber, secondNumber));
 
   return cons(question, answer);
 };
 
-export default username => BrainGame(description, conductGame, username);
+export default user => playGame(description, conductGame, user);

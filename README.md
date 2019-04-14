@@ -1,4 +1,14 @@
-# project-lvl1-s478
+Brain-Game project!
+We have five game:
+1. Even-parity(start: brain-event)
+2. Calculator(start: brain-calc)
+3. Greatest Common Divisor(start: brain-gcd)
+4. Arithmetic Rrogression(start:brain-progression)
+5. Prime Number(start: brain-prime)
+
+All games run through the console!
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/08ba8a562b8cfdf377b8/maintainability)](https://codeclimate.com/github/KLN1987/project-lvl1-s478/maintainability)
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/08ba8a562b8cfdf377b8/test_coverage)](https://codeclimate.com/github/KLN1987/project-lvl1-s478/test_coverage)
 
