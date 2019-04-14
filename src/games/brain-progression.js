@@ -5,20 +5,20 @@ import randomNumber from '../randomNumber';
 const description = 'What number is missing in the progression?';
 const progresLength = 10;
 
-const getProgression = (progresStep, progresFirstElement, length) => {
+const getProgression = (stepGame, firstElement, length) => {
   const progression = [];
   for (let i = 0; i < length; i += 1) {
-    const item = progresFirstElement + progresStep * i;
+    const item = firstElement + stepGame * i;
     progression.push(item);
   }
   return progression;
 };
 
 const conductGame = () => {
-  const progresStep = randomNumber(1, 10);
-  const progresFirstElement = randomNumber();
+  const stepGame = randomNumber(1, 10);
+  const firstElement = randomNumber();
 
-  const progression = getProgression(progresStep, progresFirstElement, progresLength);
+  const progression = getProgression(stepGame, firstElement, progresLength);
   const randomElementProgression = randomNumber(0, progresLength - 1);
 
   const question = progression

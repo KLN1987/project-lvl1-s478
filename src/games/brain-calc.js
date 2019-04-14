@@ -1,5 +1,5 @@
 import { cons } from 'hexlet-pairs';
-import BrainGame from '../gameStart';
+import BrainGame from '../index';
 import randomNumber from '../randomNumber';
 
 const description = 'What is the result of the expression?';

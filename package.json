@@ -1,12 +1,14 @@
 {
   "name": "demid",
-  "version": "2.1.0",
+  "version": "4.4.0",
   "description": "console game",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
     "brain-event": "dist/bin/brain-event.js",
     "brain-calc": "dist/bin/brain-calc.js",
-    "brain-gcd": "dist/bin/brain-gcd.js"
+    "brain-gcd": "dist/bin/brain-gcd.js",
+    "brain-progression": "dist/bin/brain-progression.js",
+    "brain-prime": "dist/bin/brain-prime.js"
   },
   "files": [
     "dist"
@@ -46,5 +48,5 @@
     "url": "https://github.com/KLN1987/project-lvl1-s478/issues"
   },
   "homepage": "https://github.com/KLN1987/project-lvl1-s478#readme",
-  "main": ""
+  "main": "babel.config.js"
 }

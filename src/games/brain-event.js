@@ -1,6 +1,6 @@
 import { cons } from 'hexlet-pairs';
-import BrainGame from '../gameStart';
-import randomNumber from '../even';
+import BrainGame from '../index';
+import randomNumber from '../randomNumber';
 
 const description = 'Answer "yes" if number even otherwise answer "no".';
 const isEven = number => number % 2 === 0;

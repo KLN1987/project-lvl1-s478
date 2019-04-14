@@ -1,6 +1,6 @@
 import { cons } from 'hexlet-pairs';
-import BrainGame from '../gameStart';
-import randomNumber from '../even';
+import BrainGame from '../index';
+import randomNumber from '../randomNumber';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
@@ -15,7 +15,7 @@ const gcdGame = (firstOperand, secondOperand) => {
   return result;
 };
 
-const taskGame = () => {
+const conductGame = () => {
   const firstOperand = randomNumber();
   const secondOperand = randomNumber();
   const question = `${firstOperand} ${secondOperand}`;
@@ -24,4 +24,4 @@ const taskGame = () => {
   return cons(question, answer);
 };
 
-export default username => BrainGame(description, taskGame, username);
+export default username => BrainGame(description, conductGame, username);
