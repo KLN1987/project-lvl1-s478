@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import getName from '../gameStart';
+import { getName } from '../index';
 
 getName();
