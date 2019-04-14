@@ -3,24 +3,29 @@ import playGame from '../index';
 import randomNumber from '../randomNumber';
 
 const description = 'What is the result of the expression?';
+const operation = ['+', '-', '*'];
+const randomAction = randomNumber(0, 2);
 
 const conductGame = () => {
   const firstNumber = randomNumber();
   const secondNumber = randomNumber();
-  const operation = '+-*'[randomNumber(0, 2)];
+  const randomOperation = operation[randomAction];
 
   let answer;
-  switch (operation) {
+  switch (randomOperation) {
     case '+':
       answer = firstNumber + secondNumber;
       break;
     case '-':
       answer = firstNumber - secondNumber;
       break;
-    default:
+    case '*':
       answer = firstNumber * secondNumber;
+      break;
+    default:
+      answer = 'Incorrectly';
   }
-  const question = `${firstNumber} ${operation} ${secondNumber}`;
+  const question = `${firstNumber} ${randomOperation} ${secondNumber}`;
   return cons(question, String(answer));
 };
 
