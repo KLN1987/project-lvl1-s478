@@ -4,12 +4,11 @@ import randomNumber from '../randomNumber';
 
 const description = 'What is the result of the expression?';
 const operation = ['+', '-', '*'];
-const randomAction = randomNumber(0, 2);
 
 const conductGame = () => {
   const firstNumber = randomNumber();
   const secondNumber = randomNumber();
-  const randomOperation = operation[randomAction];
+  const randomOperation = operation[randomNumber(0, 2)];
 
   let answer;
   switch (randomOperation) {
